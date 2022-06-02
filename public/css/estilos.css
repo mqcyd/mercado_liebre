@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: roboto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.cabecera{
+    background-color: #EAC926;
+    padding: 10px;
+} 
+
+.header1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cabecera img{
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+ul a{
+    text-decoration: none;
+}
+
+input{
+    width: 80%;
+}
+
+.cabecera p{
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+body{
+    background-color: #c3c3c3;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*menu de hamburguesas, asi se le dice a las tres rayitas*/
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+}
+.fa-bars{
+    border-radius: 5px;
+    background-color: #1259c3;
+    padding: 10px;
+    color: #fff;
+}
+
+/*seccion main*/
+
+.main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fa-truck { 
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;    
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    left: 90%;
+}
+
+
+
+.articulo{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #fff;
+  
+}
+
+.descripcionArt{
+    border-top: solid 2px #ebebeb;
+    padding: 15px;
+}
+
+.preciodescuento{
+    display: flex;
+    text-align: left;
+}
+
+.precio{
+    width: 30%;
+}
+
+.descuento{
+    width: 70%;
+}
+
+/*tipografía*/
+
+h3{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento, .descripcion{
+    font-size: 16px;
+}
+
+.descuento{
+    color:#39b54a;
+}
+
+/*pie de pagina*/
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
+
+.fa-credit-card{
+    margin-bottom: 10px;
+    color:#1259c3
+}
+
+.fa-gift{
+    margin-bottom: 10px;
+    color:#1259c3
+}
+
+.fa-user-shield{
+    margin-bottom: 10px;
+    color:#1259c3
+}
+
+.info{
+    margin-top: 25px;
+}
+
+info p b{
+    color: #666;
+}
+
+.info p{
+    margin-top: 5px;
+}
+
+.copy{
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/*media queries*/
+@media(min-width: 0px) and (max-width: 500px) {
+   .menuGeneral{
+       display: none;
+   }
+    }
+
+@media(min-width: 501px){
+    }
+
+@media(min-width: 900px){
+    .cabecera img{
+        width: 20%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .header1 input{
+        width: 40%;
+    }
+
+    .header1 button{
+        width: 3%;
+    }
+
+    .header1 p{
+        width: 30%;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+    
+}
+
+
+
+    
