@@ -2,9 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
-app.listen(process.env.PORT || 3000 , () =>
- console.log("Servidor activo")
-);
+const port = process.env.PORT || 3000;
 
 
 const publicPath = path.resolve(__dirname, "./public");
@@ -21,4 +19,6 @@ app.get("/", (req, res) => {
    app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "/views/login.html"));
    });
+
+   app.listen(port, () => console.log("Listening on ${port}"))
 
